@@ -2,7 +2,12 @@ import React from 'react'
 
 function Sertificate() {
   return (
-    <div>Sertificate</div>
+    <div>
+      <h1>
+        Sertificate
+      </h1>
+      <p>Hello world</p>
+    </div>
   )
 }
 
