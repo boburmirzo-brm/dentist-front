@@ -1,0 +1,221 @@
+.care__Teeth{
+    height: auto;
+}
+
+.careTeeth{
+    height: 600px;
+    margin: 20px auto;
+    margin: 0 auto;
+    padding: 200px 0px 0px 100px;
+    background: url("https://www.lifeinnorway.net/wp-content/uploads/2021/07/dental-care-in-norway-concept.jpg") no-repeat center/cover;
+    
+}
+.careText{
+    width: 700px;
+    height: 250px;
+    line-height: 25px;
+    color: rgb(56, 53, 53);
+}
+.careText img{
+width: 250px;
+}
+.careTeeth__note{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.note__box{
+    width: 48%;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgb(173, 172, 172);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    overflow: auto;
+}
+.note__box1{
+    width: 48%;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgb(173, 172, 172);
+    background: url("https://www.smilemoredentalcare.com/wp-content/uploads/2019/10/oralhealth.jpg") no-repeat center/cover;
+}
+.note__box2{
+    width: 48%;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgb(173, 172, 172);
+    background: url("https://heroesdental.com/wp-content/uploads/2018/10/Dental-Hygiene-Month-Heroes-1080x675.jpeg") no-repeat center/cover;
+
+}
+.note__box3{
+    width: 48%;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgb(173, 172, 172);
+    background: url("https://otaradental.ca/wp-content/uploads/2019/10/historical-toothbrushes.jpg") no-repeat center/cover;
+
+}
+.note__box4{
+    width: 48%;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgb(173, 172, 172);
+    background: url("https://images.dentalplans.com/2016/dear-doctor/how-to-clean-teeth-with-braces/braces2.jpg") no-repeat center/cover;
+
+}
+
+@media screen and (max-width:1220px) {
+    .careTeeth{
+        padding: 170px 0px 0px 70px;
+    }
+    .careText{
+        width: 600px;
+        height: 250px;
+    }
+    .note__box{
+        width: 48%;
+        height: 450px;
+    }
+    .note__box1{
+        width: 48%;
+        height: 450px;
+    }
+    .note__box2{
+        width: 48%;
+        height: 450px;
+    }
+    .note__box3{
+        width: 48%;
+        height:450px;
+    }
+    .note__box4{
+        width: 48%;
+        height: 450px;
+    }
+}
+@media screen and (max-width:1030px) {
+    .careTeeth{
+        padding: 170px 0px 0px 50px;
+    }
+    .careText{
+        width: 500px;
+        height: 300px;
+    }
+    .note__box{
+        width: 48%;
+        height: 400px;
+        font-size: 14px;
+    }
+    .note__box1{
+        width: 48%;
+        height: 400px;
+    }
+    .note__box2{
+        width: 48%;
+        height: 400px;
+    }
+    .note__box3{
+        width: 48%;
+        height:400px;
+    }
+    .note__box4{
+        width: 48%;
+        height: 400px;
+    }
+  
+}
+@media screen and (max-width:800px) {
+    .careTeeth{
+        height: 500px;
+        padding: 120px 0px 0px 40px;
+        background: url("https://www.lifeinnorway.net/wp-content/uploads/2021/07/dental-care-in-norway-concept.jpg") no-repeat center/center;
+
+    }
+    .careText{
+        width: 400px;
+        height: 300px;
+    }
+    .note__box{
+        width: 48%;
+        height: 330px;
+        font-size: 12px;
+    }
+    .note__box1{
+        width: 48%;
+        height: 330px;
+    }
+    .note__box2{
+        width: 48%;
+        height: 330px;
+    }
+    .note__box3{
+        width: 48%;
+        height:330px;
+    }
+    .note__box4{
+        width: 48%;
+        height: 330px;
+    }
+}
+@media screen and (max-width:600px) {
+    .careTeeth{
+        height: 400px;
+        padding: 70px 0px 0px 20px;
+
+    }
+    .careText{
+        width: 340px;
+        height: 300px;
+        font-size: 14px;
+    }
+    .note__box{
+        width: 100%;
+        height: 300px;
+        font-size: 14px;
+    }
+    .note__box1{
+        width: 100%;
+        height: 400px;
+    }
+    .note__box2{
+        width: 100%;
+        height: 400px;
+    }
+    .note__box3{
+        width: 100%;
+        height:400px;
+    }
+    .note__box4{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (max-width:500px) {
+    .careTeeth{
+        height: 350px;
+        padding: 70px 0px 0px 10px;
+    }
+    .careText{
+        width: 250px;
+        height: 200px;
+        font-size: 12px;
+        overflow: auto;
+    }
+    .careText h1{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
