@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Service.css"
-import { BsArrowRightShort } from "react-icons/bs"
 import servisRasm1 from "../../assets/service-images/toothCheckout.jpg"
 import servisRasm2 from "../../assets/service-images/toothWhitening.jpg"
 import servisRasm3 from "../../assets/service-images/toothBracet.jpg"
@@ -20,11 +19,6 @@ import cosmeticServis from "../../assets/service-images/cosmetics.png"
 function Service() {
   return (
     <div className='service__wrapper container'>
-      <div className="first__banner__service">
-        <div className="first__btn__service">Bizning Xizmatlar</div>
-        <h1 className="first__banner__title">Bizning <span>Klinik Xizmatlarimiz</span></h1>
-        <p className="first__banner__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum reiciendis quo laboriosam dolor et laudantium consequuntur est tenetur, cumque consequatur.</p>
-      </div>
       <div className="second__banner__service">
         <div className="second__btn__service">Bizning Xizmatlar</div>
         <div className="second__banner__title"><span>Yuqori Sifatli</span> Xizmat Ko'rsatish</div>
@@ -39,7 +33,6 @@ function Service() {
               <img src={checkupServis} alt="" />
               <p className="mini__title__card">Tekshiruv</p>
               <p className="mini__desc__card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, tempore.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
           <div className="second__banner__img__card">
@@ -50,7 +43,6 @@ function Service() {
               <img src={whiteningServis} alt="" />
               <p className="mini__title__card">Tishlarni oqartirish</p>
               <p className="mini__desc__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, doloribus.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
           <div className="second__banner__img__card">
@@ -61,7 +53,6 @@ function Service() {
               <img src={braceServis} alt="" />
               <p className="mini__title__card">Briketlar</p>
               <p className="mini__desc__card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, laudantium.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
           <div className="second__banner__img__card">
@@ -72,7 +63,6 @@ function Service() {
               <img src={implantServis} alt="" />
               <p className="mini__title__card">Tish qo'yish</p>
               <p className="mini__desc__card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quos.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
           <div className="second__banner__img__card">
@@ -83,7 +73,6 @@ function Service() {
               <img src={fillingServis} alt="" />
               <p className="mini__title__card">Plomba qo'yish</p>
               <p className="mini__desc__card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, provident.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
           <div className="second__banner__img__card">
@@ -94,10 +83,15 @@ function Service() {
               <img src={cosmeticServis} alt="" />
               <p className="mini__title__card">Tish kosmatikasi</p>
               <p className="mini__desc__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, totam.</p>
-              <button className="btn__desc__part__card">Yana <BsArrowRightShort className='arrow__right'/> </button>
             </div>
           </div>
         </div>
+
+        <div className="first__banner__service">
+        <div className="first__btn__service">Bizning Xizmatlar</div>
+        <h1 className="first__banner__title">Bizning <span>Klinik Xizmatlarimiz</span></h1>
+        <p className="first__banner__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum reiciendis quo laboriosam dolor et laudantium consequuntur est tenetur, cumque consequatur.</p>
+      </div>
       </div>
     </div>
   )
