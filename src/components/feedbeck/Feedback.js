@@ -2,7 +2,9 @@ import React from 'react'
 
 function Feedback() {
   return (
-    <div>Feedback</div>
+    <div className='feedback'>
+      <h2>Salom Team</h2>
+    </div>
   )
 }
 
