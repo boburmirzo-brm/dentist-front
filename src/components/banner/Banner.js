@@ -48,11 +48,12 @@ function Banner() {
        modules={[Navigation, Autoplay]} 
        className="mySwiper">
         {
-          Banner_Data?.map((item, inx)=>
-          <SwiperSlide>
+          Banner_Data?.map((item)=>
+          <SwiperSlide key={item?._id}>
             <img src={item?.img}alt="" />
             <h1>{item?.title}</h1>
             <p>{item?.desc}</p>
+            <div className="back__bc">wdwdwds</div>
           </SwiperSlide>
           )
         }
