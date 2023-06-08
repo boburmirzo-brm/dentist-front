@@ -13,26 +13,31 @@ function Banner() {
     {
       _id:"b1",
       img: b_img,
-      title:"Contact Us Become The Next Our Happy Client"
+      title:"Contact Us Become The Next Our Happy Client",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique facere nisi, excepturi fugiat praesentium."
     },
     {
       _id:"b2",
       img: b_img3,
-      title:"The Best Dental Clinic That You Can Trust"
+      title:"The Best Dental Clinic That You Can Trust",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem incidunt aspernatur quos."
     },
     {
       _id:"b3",
       img: b_img4,
-      title:"The Best Services Dedicated to Give You The Best Services"
+      title:"The Best Services Dedicated to Give You The Best Services",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam veniam incidunt suscipit blanditiis magni reiciendis?"
     },
     {
       _id:"b4",
       img: b_img5,
-      title:"Helping You to Bring Back Your Happy Smile"
+      title:"Helping You to Bring Back Your Happy Smile",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem incidunt aspernatur quos."
     },
   ]
   return (
     <div className="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam veniam incidunt suscipit blanditiis magni reiciendis?</p>
       <div className="banner">
       <Swiper
       autoplay={{
@@ -48,6 +53,7 @@ function Banner() {
           <SwiperSlide>
             <img src={item?.img}alt="" />
             <h1>{item?.title}</h1>
+            <p>{item?.desc}</p>
           </SwiperSlide>
           )
         }
