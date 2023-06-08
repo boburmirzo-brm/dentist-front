@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rigth__first-btn{
+    color: #3267FF;
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #D3E0FF;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rigth h1{
+    font-size: 52px;
+}
+
+.rigth font{
+    color: #3D80FF;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+}
+
+.rigth p{
+    font-family: 'Archivo', sans-serif;
+    color: #636571;
+}
+
+.right__second-btn{
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #3267FF;
+    background-color: #3267FF;
+}
+.main__img{
+    position: relative;
+}
+  
+.img2{
+   position: absolute;
+   bottom: 20px;
+   left: 100px;
+   z-index: 1;
+}
+
+.main{
+    background: #F1F8FF;
+    width: 1250px;
+    height: auto;
+    margin: auto;
+}
