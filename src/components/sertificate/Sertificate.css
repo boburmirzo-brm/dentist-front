@@ -1,0 +1,67 @@
+.certificate_page {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    background-color: transparent;
+}
+
+.certificate_main_page {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left_text_part {
+    width: 55%;
+    background-color: transparent;
+}
+
+.right_swiper_part {
+    width: 40%;
+    background-color: transparent;
+}
+
+.award_text_for_dentist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.swiper {
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    .certificate_main_page {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left_text_part {
+        width: 100%;
+    }
+
+    .right_swiper_part {
+        width: 100%;
+    }
+
+}
