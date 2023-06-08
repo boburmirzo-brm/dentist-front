@@ -11,8 +11,16 @@
     position: absolute;
     top: 50px;
     left: 100px;
-    color: #6b6363;
+    color: var( --bg-dark);
 }
+.banner p{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: var( --bg-py);
+    font-size: 18px;
+}
+
 @media screen and (max-width: 990px){
     .banner img{
         height: 350px;;
