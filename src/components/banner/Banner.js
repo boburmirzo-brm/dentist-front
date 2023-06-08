@@ -13,18 +13,22 @@ function Banner() {
     {
       _id:"b1",
       img: b_img,
+      title:"Contact Us Become The Next Our Happy Client"
     },
     {
       _id:"b2",
       img: b_img3,
+      title:"The Best Dental Clinic That You Can Trust"
     },
     {
       _id:"b3",
       img: b_img4,
+      title:"The Best Services Dedicated to Give You The Best Services"
     },
     {
       _id:"b4",
       img: b_img5,
+      title:"Helping You to Bring Back Your Happy Smile"
     },
   ]
   return (
@@ -41,7 +45,10 @@ function Banner() {
        className="mySwiper">
         {
           Banner_Data?.map((item, inx)=>
-          <SwiperSlide><img src={item?.img}alt="" /></SwiperSlide>
+          <SwiperSlide>
+            <img src={item?.img}alt="" />
+            <h1>{item?.title}</h1>
+          </SwiperSlide>
           )
         }
       </Swiper>
