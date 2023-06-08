@@ -7,7 +7,6 @@ const SinglePageCertificate = () => {
     const data = useLocation().state
     const navigate = useNavigate()
 
-    console.log(data);
     return (
         <div className='main_single_page_certificate'>
             {
@@ -15,7 +14,7 @@ const SinglePageCertificate = () => {
                     window.history.replaceState({}, data)
                     navigate("/")
                 }}></div>
-            }
+            }xw
             {
                 data && <>
                     <div className="single_page_certificate show">
