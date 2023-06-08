@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.486);
+    z-index: 10;
 }
 
 .single_page_certificate {
@@ -23,6 +24,7 @@
     justify-content: center;
     background-color: transparent;
     transition: .5s;
+    z-index: 10;
 }
 
 .single_page_certificate.show {
@@ -48,4 +50,5 @@
     color: #fff;
     font-size: 35px;
     cursor: pointer;
+    z-index: 10;
 }

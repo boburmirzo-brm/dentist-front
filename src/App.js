@@ -12,10 +12,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <SinglePageCertificate />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/care-teeth' element={<CareTeeth />} />
-        <Route path='/certificate_single_page' element={<SinglePageCertificate />} />
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
       </Routes>
