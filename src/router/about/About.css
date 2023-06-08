@@ -1,0 +1,121 @@
+.about__us__about{
+    width: 100%;
+    height: auto;
+    background: var(--bg-light);
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__img{
+    width: 48%;
+    height: 458px;
+    margin: 10px;
+    background: url("../../assets//about/img10.jpg") no-repeat center/contain;
+}
+.about__text{
+    width: 48%;
+    height: 458px;
+    margin: 10px;
+}
+
+.about__text h1{
+    margin: 50px 30px;
+    font-weight: 400;
+    color: var(--bg-dark);
+}
+.about__text p{
+    margin: -20px 30px;
+    color: gray;
+}
+.about__big{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__littele__text{
+    width: 240px;
+    height: 170px;
+    margin: 39px 30px;
+}
+.about__littele__text h3{
+    margin: 10px 3px;
+    color: var(--bg-dark);
+}
+.about__littele__text h4{
+    margin: 3px;
+    font-weight: 400;
+    color: gray;
+}
+.about__littele__text span{
+    margin: 20px 3px;
+    color: var(--bg-py);
+    cursor: pointer;
+}
+
+.about__us2{
+    width: 100%;
+    background: #f2f2f2;
+}
+.about__text2{
+    width: 75%;
+    height: 200px;
+    margin: 20px auto;
+}
+.about__text2 h3{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--bg-py);
+    font-weight: 600;
+}
+.about__text2 h1{
+    text-align: center;
+    color: var(--bg-dark);
+}
+.about__text2 h4{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    color: gray;
+}
+.about__big__img{
+    display: flex;
+}
+.about__img2{
+    width: 90%;
+    height: 420px;
+    border: 2px solid #d2d2d2;
+    border-radius: 6px;
+    margin: 20px 70px;
+    background: url("../../assets/about/img12.png") no-repeat center/contain;
+}
+.about__img3{
+    width: 90%;
+    height: 420px;
+    margin: 20px 70px;
+    border: 2px solid #d2d2d2;
+    border-radius: 6px;
+    background: url("../../assets/about/img13.png") no-repeat center/contain;
+}
+.about__img4{
+    width: 90%;
+    height: 420px;
+    margin: 20px 70px;
+    border: 2px solid #d2d2d2;
+    border-radius: 6px;
+    background: url("../../assets/about/img14.png") no-repeat center/contain;
+}
+
+.about__img22{
+    width: 200px;
+    height: 100px;
+    border: 2px solid var(--bg-light);
+    background: var(--bg-light);
+    border-radius: 12px;
+    margin: 300px 50px;
+}
+.about__img22 h3{
+    margin: 10px 17px;
+    color: var(--bg-dark);
+}
+.about__img22 h4{
+    text-align: center;
+    color: gray;
+}
