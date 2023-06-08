@@ -56,7 +56,45 @@
 
 .main{
     background: #F1F8FF;
-    width: 1250px;
-    height: auto;
+    max-width: 1250px;
+    width: auto;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .client{
+    padding: 20px;
+  }
+
+  .main__img{
+    position: relative;
+}
+  
+.img2{
+   position: absolute;
+   top: 180px;
+   margin-left: 50px;
+   width: 250px;
+   z-index: 1;
+}
+  .img1{
+    width: 300px;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .rigth {
+    order: 1;
+  }
+
+  .img2 {
+    left: 0;
+    bottom: -50px;
+  }
 }
