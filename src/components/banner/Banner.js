@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper";
 import b_img from "../../assets/banner/b1.jpg"
-import b_img3 from "../../assets/banner/b3.jpg"
+import b_img3 from "../../assets/banner/b6.avif"
 import b_img4 from "../../assets/banner/b4.jpg"
 import b_img5 from "../../assets/banner/b5.jpg"
 function Banner() {
