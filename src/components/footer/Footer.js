@@ -21,7 +21,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer__container__text__box footer_part__box2">
-            <h2 className='footer__container__text__box2__text'>Foydali havola</h2>
+            <h2 className='footer__container__text__box2__text footer__part'>Foydali havola</h2>
             <div className="footer__container__text__box2__button"></div>
             <p className='footer__container__text__box2__text'>Privacy Policy</p>
             <p className='footer__container__text__box2__text'>Support</p>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
 
           <div className="footer__container__text__box">
-          <h2 className='footer__container__text__box2__text'>Qo'llab-quvvatlash</h2>
+          <h2 className='footer__container__text__box2__text footer__part'>Qo'llab-quvvatlash</h2>
             <div className="footer__container__text__box2__button"></div>
             <p className='footer__container__text__box2__text'>Privacy Policy</p>
             <p className='footer__container__text__box2__text'>Support</p>
@@ -38,7 +38,7 @@ function Footer() {
             <p className='footer__container__text__box2__text'>Terms & Conditions</p>
           </div>
           <div className="footer__container__text__box">
-          <h2 className='footer__container__text__box2__text'>
+          <h2 className='footer__container__text__box2__text footer__part'>
 Biz bilan bog'lanish</h2>
             <div className="footer__container__text__box2__button"></div>
             <p className='footer__container__text__box2__text footer__container__text__box2__text__icon'><span className='footer__container__text__box2__text__icon'><BiMapAlt/></span>Jl. Patimura II No. 18, Denpasar</p>
