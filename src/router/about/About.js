@@ -4,7 +4,7 @@ import "./About.css"
 function About() {
   return (
       <div className="about__us">
-        <div className="about__us__about">
+        <div className="container about__us__about">
           <div className="about__img"></div>
       <div className="about__text">
         <h1>Welcome to Dental Clinic</h1>
@@ -24,7 +24,7 @@ function About() {
         
       </div>
         </div>
-      <div className="about__us2">
+      <div className="container about__us2">
         <div className="about__text2">
           <h3> - ADVANCED SERVICES - </h3>
           <h1>We Care About Your Health</h1>

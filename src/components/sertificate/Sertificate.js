@@ -30,7 +30,6 @@ const DATA_SWIPER = [
 
 
 function Sertificate() {
-
   return (
     <section className='certificate_page'>
       <div className="container">

@@ -37,7 +37,6 @@ function Banner() {
   ]
   return (
     <div className="container">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam veniam incidunt suscipit blanditiis magni reiciendis?</p>
       <div className="banner">
       <Swiper
       autoplay={{

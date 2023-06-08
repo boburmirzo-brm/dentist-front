@@ -6,8 +6,7 @@ import { RxCross2 } from 'react-icons/rx'
 const SinglePageCertificate = () => {
     const data = useLocation().state
     const navigate = useNavigate()
-
-    console.log(data);
+    document.body.style.overflow = data ? "hidden" : "auto"
     return (
         <div className='main_single_page_certificate'>
             {

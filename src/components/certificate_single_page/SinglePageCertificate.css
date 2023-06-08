@@ -18,7 +18,8 @@
     min-width: 50%;
     height: auto;
     position: fixed;
-    top: 500px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,13 +28,13 @@
     z-index: 10;
 }
 
-.single_page_certificate.show {
-    top: 10%;
-}
+/* .single_page_certificate.show {
+    top: 0%;
+} */
 
 @media screen and (max-width:850px) {
     .single_page_certificate {
-        width: 80%;
+        width: 95%;
     }
 
     .single_page_certificate img {
