@@ -16,13 +16,17 @@ const SinglePageCertificate = () => {
                     navigate("/")
                 }}></div>
             }
-            <div className="single_page_certificate show">
-                <img src={data.b2} alt="" />
-            </div>
-            <RxCross2 className='cross_single_page_certificate' onClick={() => {
-                window.history.replaceState({}, data)
-                navigate("/")
-            }} />
+            {
+                data && <>
+                    <div className="single_page_certificate show">
+                        <img src={data?.b2} alt="" />
+                    </div>
+                    <RxCross2 className='cross_single_page_certificate' onClick={() => {
+                        window.history.replaceState({}, data)
+                        navigate("/")
+                    }} />
+                </>
+            }
         </div>
     )
 }

@@ -64,7 +64,7 @@ function Sertificate() {
               {
                 DATA_SWIPER?.map((item, inx) =>
                   <SwiperSlide key={inx}>
-                    <Link to="/certificate_single_page" state={item} >
+                    <Link to="/" state={item} >
                       <img src={item.b2} alt='img' />
                     </Link>
 
