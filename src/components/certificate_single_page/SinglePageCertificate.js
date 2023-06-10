@@ -7,6 +7,7 @@ const SinglePageCertificate = () => {
     const data = useLocation().state
     const navigate = useNavigate()
     document.body.style.overflow = data ? "hidden" : "auto"
+
     return (
         <div className='main_single_page_certificate'>
             {
@@ -14,7 +15,7 @@ const SinglePageCertificate = () => {
                     window.history.replaceState({}, data)
                     navigate("/")
                 }}></div>
-            }
+            }xw
             {
                 data && <>
                     <div className="single_page_certificate show">

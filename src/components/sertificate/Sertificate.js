@@ -72,7 +72,6 @@ function Sertificate() {
               }
 
             </Swiper>
-
           </div>
         </div>
       </div>
