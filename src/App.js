@@ -8,6 +8,9 @@ import Service from './router/service/Service';
 import Footer from './components/footer/Footer';
 import SinglePageCertificate from './components/certificate_single_page/SinglePageCertificate';
 import AfterBefore from './components/after-before/AfterBefore';
+import Login from './router/login/Login'
+import Admin from './router/admin/Admin'
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
         <Route path='/after' element={<AfterBefore />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin/*" element={<Admin />} />
       </Routes>
       <Footer />
     </div>

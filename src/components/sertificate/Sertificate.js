@@ -32,6 +32,7 @@ const DATA_SWIPER = [
 function Sertificate() {
   return (
     <section className='certificate_page'>
+      <h1 className='main_text_certificate_page'>Certificate & Awards</h1>
       <div className="container">
         <div className="certificate_main_page">
           <div className="left_text_part">

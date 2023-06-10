@@ -1,0 +1,415 @@
+.login_page {
+    width: 100%;
+    height: 100vh;
+}
+
+.login_page-box {
+    width: 320px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 13px;
+    gap: 15px;
+    background-color: #ffffff9a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-page_box_text_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login_page h4 {
+    color: var(--bg-py);
+    font-size: 19px;
+}
+
+.login_page-box h6 {
+    color: var(--bg-light);
+    font-size: 12px;
+}
+
+.login_page-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login_page-input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.login_page-input-container svg {
+    width: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.login_page-input-container svg:last-child {
+    width: 30px;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+}
+
+
+.login_page-input-container input {
+    height: 30px;
+    flex: 1;
+    border: none;
+    outline: none;
+    text-indent: 5px;
+    border-radius: 3px;
+}
+
+.login_page-form-btn {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .3s;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.login_page-form-btn:hover {
+    background-color: var(--bg-py);
+    transition: .3s;
+    color: #fff;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.login_page_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-py);
+    overflow: hidden;
+}
+
+.login_page_background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.login_page_background li:nth-child(0) {
+    left: 32%;
+    width: 195px;
+    height: 195px;
+    bottom: -195px;
+    animation-delay: 1s;
+}
+
+.login_page_background li:nth-child(1) {
+    left: 59%;
+    width: 81px;
+    height: 81px;
+    bottom: -81px;
+    animation-delay: 2s;
+}
+
+.login_page_background li:nth-child(2) {
+    left: 87%;
+    width: 187px;
+    height: 187px;
+    bottom: -187px;
+    animation-delay: 5s;
+}
+
+.login_page_background li:nth-child(3) {
+    left: 4%;
+    width: 94px;
+    height: 94px;
+    bottom: -94px;
+    animation-delay: 9s;
+}
+
+.login_page_background li:nth-child(4) {
+    left: 56%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 20s;
+}
+
+.login_page_background li:nth-child(5) {
+    left: 66%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 7s;
+}
+
+.login_page_background li:nth-child(6) {
+    left: 40%;
+    width: 134px;
+    height: 134px;
+    bottom: -134px;
+    animation-delay: 17s;
+}
+
+.login_page_background li:nth-child(7) {
+    left: 39%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 26s;
+}
+
+.login_page_background li:nth-child(8) {
+    left: 79%;
+    width: 126px;
+    height: 126px;
+    bottom: -126px;
+    animation-delay: 16s;
+}
+
+.login_page_background li:nth-child(9) {
+    left: 73%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 45s;
+}
+
+.login_page_background li:nth-child(10) {
+    left: 11%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 29s;
+}
+
+.login_page_background li:nth-child(11) {
+    left: 36%;
+    width: 90px;
+    height: 90px;
+    bottom: -90px;
+    animation-delay: 32s;
+}
+
+.login_page_background li:nth-child(12) {
+    left: 28%;
+    width: 166px;
+    height: 166px;
+    bottom: -166px;
+    animation-delay: 28s;
+}
+
+.login_page_background li:nth-child(13) {
+    left: 45%;
+    width: 101px;
+    height: 101px;
+    bottom: -101px;
+    animation-delay: 34s;
+}
+
+.login_page_background li:nth-child(14) {
+    left: 28%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 36s;
+}
+
+.login_page_background li:nth-child(15) {
+    left: 46%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 43s;
+}
+
+.login_page_background li:nth-child(16) {
+    left: 88%;
+    width: 199px;
+    height: 199px;
+    bottom: -199px;
+    animation-delay: 28s;
+}
+
+.login_page_background li:nth-child(17) {
+    left: 14%;
+    width: 104px;
+    height: 104px;
+    bottom: -104px;
+    animation-delay: 58s;
+}
+
+.login_page_background li:nth-child(18) {
+    left: 43%;
+    width: 86px;
+    height: 86px;
+    bottom: -86px;
+    animation-delay: 77s;
+}
+
+.login_page_background li:nth-child(19) {
+    left: 28%;
+    width: 95px;
+    height: 95px;
+    bottom: -95px;
+    animation-delay: 12s;
+}
+
+.login_page_background li:nth-child(20) {
+    left: 78%;
+    width: 170px;
+    height: 170px;
+    bottom: -170px;
+    animation-delay: 3s;
+}
+
+.login_page_background li:nth-child(21) {
+    left: 43%;
+    width: 151px;
+    height: 151px;
+    bottom: -151px;
+    animation-delay: 82s;
+}
+
+.login_page_background li:nth-child(22) {
+    left: 47%;
+    width: 174px;
+    height: 174px;
+    bottom: -174px;
+    animation-delay: 14s;
+}
+
+.login_page_background li:nth-child(23) {
+    left: 17%;
+    width: 164px;
+    height: 164px;
+    bottom: -164px;
+    animation-delay: 62s;
+}
+
+.login_page_background li:nth-child(24) {
+    left: 46%;
+    width: 83px;
+    height: 83px;
+    bottom: -83px;
+    animation-delay: 11s;
+}
+
+.login_page_background li:nth-child(25) {
+    left: 21%;
+    width: 175px;
+    height: 175px;
+    bottom: -175px;
+    animation-delay: 113s;
+}
+
+.login_page_background li:nth-child(26) {
+    left: 63%;
+    width: 160px;
+    height: 160px;
+    bottom: -160px;
+    animation-delay: 28s;
+}
+
+.login_page_background li:nth-child(27) {
+    left: 79%;
+    width: 95px;
+    height: 95px;
+    bottom: -95px;
+    animation-delay: 128s;
+}
+
+.login_page_background li:nth-child(28) {
+    left: 62%;
+    width: 88px;
+    height: 88px;
+    bottom: -88px;
+    animation-delay: 32s;
+}
+
+.login_page_background li:nth-child(29) {
+    left: 48%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    animation-delay: 98s;
+}
+
+.login_page_background li:nth-child(30) {
+    left: 62%;
+    width: 178px;
+    height: 178px;
+    bottom: -178px;
+    animation-delay: 102s;
+}
+
+.login_page_background li:nth-child(31) {
+    left: 56%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 1s;
+}
+
+.login_page_background li:nth-child(32) {
+    left: 33%;
+    width: 114px;
+    height: 114px;
+    bottom: -114px;
+    animation-delay: 82s;
+}
+
+.login_page_background li:nth-child(33) {
+    left: 27%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 50s;
+}
+
+.login_page_background li:nth-child(34) {
+    left: 61%;
+    width: 171px;
+    height: 171px;
+    bottom: -171px;
+    animation-delay: 86s;
+}

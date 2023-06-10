@@ -1,0 +1,253 @@
+.admin_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.admin_page-sidebar {
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: all .5s ease;
+    background-color: var(--bg-light);
+}
+
+.admin_page-main {
+    width: calc(100% - 60px);
+}
+
+.admin-page_sidebar-logo-text {
+    display: none;
+    transition: all .3s;
+    -webkit-text-stroke: 2px var(--bg-py);
+    color: transparent;
+}
+
+.admin-page_sidebar-logo-second-text {
+    display: block;
+    transition: all .3s;
+    -webkit-text-stroke: 2px var(--bg-py);
+    color: transparent;
+}
+
+.admin_page-sidebar-links p {
+    display: none;
+    transition: all .3s;
+}
+
+.admin_page-sidebar-links {
+    border-radius: 7px;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    letter-spacing: 1px;
+    transition: .3s;
+    gap: 5px;
+}
+
+.admin_page-sidebar:hover {
+    width: 250px;
+    transition: all .5s ease;
+}
+
+
+.admin_page-sidebar:hover .admin_page-main {
+    width: calc(100% - 250px);
+    background-color: yellow;
+}
+
+.admin_page-sidebar:hover .admin_page-sidebar-links {
+    width: 100%;
+    transition: all .3s;
+}
+
+
+.admin_page-sidebar:hover .admin_page-sidebar-links p {
+    display: block;
+    transition: all .3s;
+}
+
+.admin_page-sidebar:hover .admin-page_sidebar-logo-text {
+    display: block;
+    transition: all .3s;
+}
+
+
+
+.admin_page-sidebar:hover .admin-page_sidebar-logo-second-text {
+    display: none;
+    transition: all .3s;
+}
+
+
+.admin_page-links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin_page-sidebar-links:hover {
+    color: #fff;
+    background-color: var(--bg-py);
+    border: 1px solid var(--bg-py);
+    transition: .3s;
+}
+
+.create-product_page,
+.manage_product {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create_product-form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.create_product-form input {
+    border: 1px solid #dbdbdb;
+    outline: none;
+    border-radius: 7px;
+    text-indent: 7px;
+    padding: 5px;
+}
+
+.create_product-form button {
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.create_product-form button:hover {
+    border: 1px solid var(--bg-py);
+    background-color: var(--bg-py);
+    color: #fff;
+    transition: .3s;
+}
+
+.create-product_checkbox_container {
+    display: flex;
+    gap: 5px;
+
+}
+
+.create-product_checkbox_container p {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+@media screen and (max-width:500px) {
+    .create_product-form {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .create_product-form button {
+        font-size: 10px;
+    }
+
+    .admin_page-sidebar-links {
+        border-radius: 7px;
+        border: 1px solid #dbdbdb;
+        cursor: pointer;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        letter-spacing: 1px;
+        transition: .3s;
+        gap: 5px;
+    }
+
+    .admin_page-sidebar:hover {
+        width: 60px;
+        transition: all .5s ease;
+    }
+
+    .admin_page-sidebar:hover .admin_page-main {
+        width: calc(100% - 60px);
+        background-color: yellow;
+    }
+
+    .admin_page-sidebar:hover .admin_page-sidebar-links {
+        transition: all .3s;
+    }
+
+
+    .admin_page-sidebar:hover .admin_page-sidebar-links p {
+        display: none;
+        transition: all .3s;
+    }
+
+    .admin_page-sidebar:hover .admin-page_sidebar-logo-text {
+        display: none;
+        transition: all .3s;
+    }
+
+
+
+    .admin_page-sidebar:hover .admin-page_sidebar-logo-second-text {
+        display: block;
+        transition: all .3s;
+    }
+
+}
+
+.swiper_container_manage_product {
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.manage_product-images {
+    width: 200px;
+    position: relative;
+}
+
+.delete_btn_manage_product {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.delete_btn_manage_product svg {
+    font-size: 15px;
+}
+
+.delete_btn_manage_product:hover {
+    background-color: red;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.manage_product-images img {
+    width: 100%;
+}

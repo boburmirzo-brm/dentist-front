@@ -2,7 +2,14 @@
     width: 100%;
     height: auto;
     background-color: transparent;
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_text_certificate_page {
+    font-size: 25px;
+    color: var(--bg-py);
 }
 
 .certificate_main_page {
