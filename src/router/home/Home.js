@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Banner/>
       <Sertificate/>
-      <HappyClient/>
+      <HappyClient/>   
       <Feedback/>
     </div>
   )
