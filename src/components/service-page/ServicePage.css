@@ -89,12 +89,11 @@
 .img__part__card{
     width: 100%;
     height: 70%;
-    background-color: red;
     overflow: hidden;
 }
 .desc__part__card{
     width: 90%;
-    height: 35%;
+    height: auto;
     position: absolute;
     bottom: 40px;
     background: #fff;
@@ -109,6 +108,7 @@
     background-position: center;
     object-fit: cover;
     transition: .3s;
+    border-radius: 10px;
 }
 .img__part__card img:hover{
     transform: scale(1.1);
@@ -130,6 +130,7 @@
     line-height: 20px;
     margin-top: 10px;
 }
+
 /* .btn__desc__part__card{
     width: 75px;
     height: 25px;
@@ -154,5 +155,107 @@
 
 
 
+
+@media screen and (max-width: 1168px) {
+    .second__banner__img__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .second__banner__title{
+        text-align: center;
+    }
+    .first__banner__title{
+        text-align: center;
+    }
+    .desc__part__card{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    .mini__title__card{
+        font-size: 17px;
+    }
+    .mini__desc__card{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    .desc__part__card{
+        padding: 5px 8px;
+    }
+    .mini__desc__card{
+       line-height: 17px;
+       margin-top: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .first__banner__desc{
+        width: 400px;
+        font-size: 15px;
+    }
+    .second__banner__img__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .desc__part__card{
+        padding: 10px 15px;
+    }
+    .mini__desc__card{
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .second__banner__desc{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .first__banner__desc{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .first__banner__title{
+        font-size: 40px;
+    }
+    .second__banner__img__wrapper{
+        grid-gap: 0;
+    }
+    .second__banner__title{
+        font-size: 30px;
+    }
+    .second__banner__desc{
+        font-size: 13px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 360px) {
+    .first__banner__title{
+        font-size: 30px;
+    }
+    .first__banner__desc{
+        font-size: 13px;
+    }
+    .first__banner__service{
+        padding: 0 10px;
+    }
+    .first__banner__desc{
+        width: auto;
+    }
+}
 
 
