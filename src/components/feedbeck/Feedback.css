@@ -2,6 +2,8 @@
     width: 100%;
     background-image: url(https://kodesolution.com/html/2017/dentalpro-html-b5/images/bg/bg6.jpg);
     background-size: cover;
+    text-align: center;
+    color: #fff;
 }
 
 .feedback .container__feedback{
@@ -10,39 +12,26 @@
     background-color: rgba(63, 163, 234, 0.763);
     position: relative;
 }
-.container__feedback .container{
-    color: #fff;
-}
 
-.container {
-    text-align: center;
-    padding-top: 50px;
-}
 
-.container h1{
-    font-size: 30px;
-}
-
-.container p{
-    margin-bottom: 20px;
-    font-size: 19px;
-}
-
-.container .testimonials__icon{
+.testimonials__icon{
     width: 100px;
     height: 30px;
     margin: 10px 0;
 }
 
-.container .feedback__cards{
+.feedback__cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     text-align: start;
+    overflow: auto;
+    gap: 20px;
 }
 .feedback__cards .feedback__card{
-    width: 32%;
+    width: 400px;
+    min-width: 400px;
 }
 .feedback__card .card{
     padding: 3%;
