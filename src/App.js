@@ -7,6 +7,7 @@ import About from './router/about/About';
 import Service from './router/service/Service';
 import Footer from './components/footer/Footer';
 import SinglePageCertificate from './components/certificate_single_page/SinglePageCertificate';
+import AfterBefore from './components/after-before/AfterBefore';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/care-teeth' element={<CareTeeth />} />
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
+        <Route path='/after' element={<AfterBefore />} />
       </Routes>
       <Footer />
     </div>
