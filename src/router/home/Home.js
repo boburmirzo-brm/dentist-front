@@ -3,6 +3,7 @@ import Banner from "../../components/banner/Banner"
 import Sertificate from '../../components/sertificate/Sertificate'
 import HappyClient from '../../components/happy-client/HappyClient'
 import Feedback from '../../components/feedbeck/Feedback'
+import Contact from '../../components/contact/Contact'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Sertificate/>
       <HappyClient/>
       <Feedback/>
+      <Contact/>
     </div>
   )
 }
