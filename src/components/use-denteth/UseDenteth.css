@@ -1,5 +1,7 @@
 .use__denteth{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -21,4 +23,10 @@
 .use__w{
     font-weight: 300;
     color: #756d6d;
+}
+
+@media screen and (max-width:900px){
+    .use__Den__img{
+        border: none;
+    }
 }
