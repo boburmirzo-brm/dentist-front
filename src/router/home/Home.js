@@ -4,6 +4,7 @@ import Sertificate from '../../components/sertificate/Sertificate'
 import HappyClient from '../../components/happy-client/HappyClient'
 import Feedback from '../../components/feedbeck/Feedback'
 import UseDenteth from '../../components/use-denteth/UseDenteth'
+import Contact from '../../components/contact/Contact'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <UseDenteth/>
       <HappyClient/>   
       <Feedback/>
+      <Contact/>
     </div>
   )
 }
