@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useLocation} from 'react'
 import "./Footer.css"
 import footer__photo from "../../assets/footer-img/footer__dents.png"
 import {AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube} from "react-icons/ai"
@@ -6,6 +6,10 @@ import {FaFacebookSquare} from "react-icons/fa"
 import {BiMapAlt} from "react-icons/bi"
 import {BsTelephoneOutbound} from "react-icons/bs"
 function Footer() {
+  const {pathname} = useLocation()
+    if(pathname === '/login'){
+        return <></>
+    }
   return (
     <div className='footer'>
       <div className="container">
