@@ -6,7 +6,7 @@ import ServicePage from '../../components/service-page/ServicePage'
 
 function Service() {
   return (
-    <div className='container'>
+    <div className=''>
         <ServicePage/>
     </div>
   )
