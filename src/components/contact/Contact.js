@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import { config } from 'dotenv';
-config();
+// import { config } from 'dotenv';
+// config();
 
 function Contact() {
   const [name, setName] = useState("")
@@ -9,7 +9,6 @@ function Contact() {
   const [type, setType] = useState("")
   const [desc, setDesc] = useState("")
 
-  console.log(process.env.REACT_APP_BOTTOKEN);
 
   function handleSubmit(e) {
     e.preventDefault()
