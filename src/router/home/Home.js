@@ -11,7 +11,7 @@ function Home() {
       <Banner/>
       <Sertificate/>
       <UseDenteth/>
-      <HappyClient/>
+      <HappyClient/>   
       <Feedback/>
     </div>
   )
