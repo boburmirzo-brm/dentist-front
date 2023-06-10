@@ -1,138 +1,109 @@
-.about__us{
+.about__container{
+    padding-top: 50px;
+}
+.about__wrapper{
+    display: flex;
     width: 100%;
     height: auto;
-    background: var(--bg-light);
-
-}
-.about__us__about{
-    
-    display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
-.about__img{
-    width: 48%;
-    height: 458px;
-    margin: 10px;
+
+.about__image__one{
+    flex: 1;
+    width: 100%;
+    height: 500px;
     background: url("../../assets//about/img10.jpg") no-repeat center/contain;
 }
-.about__text{
-    width: 48%;
-    height: 458px;
-    margin: 10px;
+.about__image__two{
+    flex: 1;
+    width: 100%;
+    height: 500px;
+    background: url("../../assets//about/img11.jpg") no-repeat center/contain;
 }
-
-.about__text h1{
-    margin: 50px 30px;
+.about__text__one{
+    flex: 1;
+}
+.about__text__one h1{
+    margin: 70px 40px;
     font-weight: 400;
     color: var(--bg-dark);
 }
-.about__text p{
-    margin: -20px 30px;
+.about__text__one h4{
+    margin: -20px 40px;
+    font-weight: 400;
     color: gray;
 }
-.about__big{
+.about__text__two{
+    flex: 1;
+}
+.about__text__two h3{
+    margin: 40px 40px;
+    font-weight: 400;
+    color: var(--bg-py);
+}
+.about__text__two h1{
+    margin: -20px 40px;
+    font-weight: 400;
+    color: var(--bg-dark);
+}
+.about__text__two h4{
+    margin: 40px 40px;
+    font-weight: 400;
+    color: gray;
+}
+
+
+
+.about__doctors{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
 }
-.about__littele__text{
-    width: 240px;
-    height: 170px;
-    margin: 39px 30px;
+.about__card{
+    width: 350px;
+    height: 600px;
+    border: 1px solid var(--bg-py);
 }
-.about__littele__text h3{
-    margin: 10px 3px;
-    color: var(--bg-dark);
+.about__doctor__img img{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
 }
-.about__littele__text h4{
-    margin: 3px;
+.about__doctor__name{
+    width: 350px;
+    height: 70px;
+    margin-top: -4px;
+    background: var(--bg-py);
+}
+.about__doctor__name h2{
+    text-align: center;
+    color: #fff;
+    transform: translateY(15px);
+}
+.about__doctor__routine h3{
+    text-align: center;
     font-weight: 400;
-    color: gray;
-}
-.about__littele__text span{
-    margin: 20px 3px;
-    color: var(--bg-py);
-    cursor: pointer;
+    transform: translateY(15px);
 }
 
-.about__us2{
-}
-.about__text2{
-    width: 75%;
-    height: 200px;
-    margin: 20px auto;
-}
-.about__text2 h3{
-    text-align: center;
-    margin-top: 10px;
-    color: var(--bg-py);
-    font-weight: 600;
-}
-.about__text2 h1{
-    text-align: center;
-    color: var(--bg-dark);
-}
-.about__text2 h4{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 400;
-    color: gray;
-}
-.about__big__img{
-    display: grid;
-   grid-template-columns: 2fr 2fr 2fr 2fr;
-}
-.about__img2{
-    width: 70%;
-    height: 420px;
-    border: 2px solid #d2d2d2;
-    border-radius: 6px;
-    margin: 20px 70px;
-    background: url("../../assets/about/img12.png") no-repeat center/contain;
-}
-.about__img3{
-    width: 70%;
-    height: 420px;
-    margin: 20px 70px;
-    border: 2px solid #d2d2d2;
-    border-radius: 6px;
-    background: url("../../assets/about/img13.png") no-repeat center/contain;
-}
-.about__img4{
-    width: 70%;
-    height: 420px;
-    margin: 20px 70px;
-    border: 2px solid #d2d2d2;
-    border-radius: 6px;
-    background: url("../../assets/about/img14.png") no-repeat center/contain;
-}
 
-.about__img22{
-    width: 200px;
-    height: 100px;
-    border: 2px solid var(--bg-light);
-    background: var(--bg-light);
-    border-radius: 12px;
-    margin: 300px 50px;
-}
-.about__img22 h3{
-    margin: 10px 17px;
-    color: var(--bg-dark);
-}
-.about__img22 h4{
-    text-align: center;
-    color: gray;
-}
 
-@media screen and (max-width: 500px){
-    .about__big__img{
-        display: flex;
-        flex-wrap: wrap;
+@media screen and (max-width:990px) {
+    .about__image__one{
+        flex: auto;
+        width: 100%;
     }
-    .about__big{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .about__image__two{
+        flex: auto;
+        width: 100%;
     }
-    .about__littele__text{
-        width: 150px;
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
     }
 }
