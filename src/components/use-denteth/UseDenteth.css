@@ -1,0 +1,24 @@
+.use__denteth{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.use__Den__img{
+    width: 400px;
+    height: 300px;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    text-align: center;
+}
+.use__Den__img img{
+    width: 100px;
+    height: 90px;
+}
+.use__size{
+    font-size: 30px;
+    font-weight: 700;
+}
+.use__w{
+    font-weight: 300;
+    color: #756d6d;
+}

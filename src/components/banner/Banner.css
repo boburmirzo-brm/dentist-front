@@ -8,10 +8,12 @@
     border-radius: 15px;
 }
 .banner h1{
+    width: 50%;
     position: absolute;
+    font-size: 40px;
     top: 50px;
     left: 60px;
-    color: var( --bg-light);
+    color: var( --bg-py);
     z-index: 3;
 }
 .back__bc{
@@ -20,26 +22,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000b0;
+    background-color: #000000c5;
     z-index: 1;
     border-radius: 15px;
 }
 .banner p{
+    width: 40%;
     position: absolute;
     top: 100px;
     left: 60px;
     color: var( --bg-light);
     z-index: 3;
     font-size: 18px;
+    margin-top: 60px;
 }
 @media screen and (max-width:979px){
     .banner p{
-        margin-top: 40px;
+        margin-top: 75px;
     }
 }
 @media screen and (max-width: 990px){
     .banner img{
-        height: 350px;;
+        height: 350px;
+    }
+    .banner p{
+    margin-top:150px;
     }
 }
 
@@ -62,5 +69,6 @@
             width: 50%;
             font-size: 18px;
             font-weight: 300;
+            top: 20px;
         }
 }

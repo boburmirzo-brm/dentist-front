@@ -53,7 +53,7 @@ function Banner() {
             <img src={item?.img}alt="" />
             <h1>{item?.title}</h1>
             <p>{item?.desc}</p>
-            <div className="back__bc">wdwdwds</div>
+            <div className="back__bc"></div>
           </SwiperSlide>
           )
         }
