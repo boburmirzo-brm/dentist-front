@@ -1,5 +1,6 @@
-import React, {useLocation} from 'react'
+import React from 'react'
 import "./Footer.css"
+import {useLocation} from "react-router-dom"
 import footer__photo from "../../assets/footer-img/footer__dents.png"
 import {AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube} from "react-icons/ai"
 import {FaFacebookSquare} from "react-icons/fa"
