@@ -48,7 +48,7 @@ const Login = () => {
                 </form>
             </div>
             <>
-                <ul class="login_page_background">
+                <ul className="login_page_background">
                     <li></li>
                     <li></li>
                     <li></li>
