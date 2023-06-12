@@ -15,7 +15,7 @@ import Admin from './router/admin/Admin'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageCertificate />
       <Routes>
         <Route path='/' element={<Home />} />

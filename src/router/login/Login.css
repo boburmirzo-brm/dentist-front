@@ -45,6 +45,10 @@
     gap: 5px;
 }
 
+.login_page-form>a {
+    cursor: pointer;
+}
+
 .login_page-input-container {
     width: 100%;
     display: flex;
