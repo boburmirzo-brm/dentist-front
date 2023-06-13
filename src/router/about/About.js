@@ -8,7 +8,7 @@ import img14 from  "../../assets/about/img14.png"
 const DATA = [
   {
     img: img12,
-    name: "Lara Crow"
+    name: "Lara Crow",
   },
   {
     img: img13,
@@ -20,14 +20,7 @@ const DATA = [
   },
 ]
 
-const NAME = [
-  {
-  },
-  {
-  },
-  {
-  },
-]
+
 
 
 function About() {
