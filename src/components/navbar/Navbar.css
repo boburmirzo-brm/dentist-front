@@ -49,7 +49,6 @@
 }
 .navbar__bars{
     font-size: 20px;
-    transform: translateY(4px);
     display: none;
 }
 
@@ -69,10 +68,11 @@
 }
 .sidebar__close{
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 20px;
     cursor: pointer;
     font-size: 25px;
+    display: none;
 }
 .sidebar__links:hover{
     color: var(--bg-dark);
@@ -101,6 +101,53 @@
 @media screen and (max-width: 750px) {
     .nav__routes{
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav__collection{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        padding: 40px 30px;
+        height: 100vh;
+        display: flex;
+        float: left;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #ddd;
+        z-index: 10;
+        transition: .3s;
+    }
+    .navbar__bars{
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+        display: block;
+        transform: translateY(-10px);
+    }
+    .nav__collection.activeNav{
+        right: 0;
+    }
+    .sidebar__close{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .nav__collection{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .nav__collection{
+        width: 200px;
+        padding: 50px 20px;
+    }
+    .sidebar__close{
+        right: 10px;
     }
 }
 
