@@ -36,7 +36,7 @@ function Banner() {
       <div className="banner">
       <Swiper
       autoplay={{
-        delay: 30000,
+        delay: 3000,
         disableOnInteraction: false
       }}
        loop={true} 
