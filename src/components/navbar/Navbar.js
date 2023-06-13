@@ -26,6 +26,7 @@ function Navbar() {
             <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/care-teeth"}>Tish g'amxo'rligi</NavLink></li>
             <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/about"}>Biz haqimizda</NavLink></li>
             <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/service"}>Xizmatlar</NavLink></li>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/after"}>Ishlarimiz</NavLink></li>
             <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/login"}>Login</NavLink></li>
             <li onClick={()=> setNavToggle(false)} className="siderbar__links"><GrFormClose onClick={()=> setNavToggle(false)} className='sidebar__close'/></li>
           </ul>
