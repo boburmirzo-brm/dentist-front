@@ -13,7 +13,7 @@ function Contact() {
   function handleSubmit(e) {
     e.preventDefault()
     let text = ""
-    text += "Mijoz Habar Yubordi: %OA"
+    text += "Mijoz Habar Yubordi:"
     text += `<b>Mijoz Ismi:</b> %OA${name}`
     text += `<b>Mijoz Telefon Raqami:</b> %OA${tel}`
     text += `<b>Xizmat Turi:</b> ${type}`
@@ -30,11 +30,11 @@ function Contact() {
       <form onSubmit={handleSubmit} className="contact__box">
         <h1>Biz Bilan Bog'laning</h1>
         <div className="name__input__div input__box">
-          <input required type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+          <input required type="text" value={name} onChange={(e) => setName(e.target.value)} />
           <span>Ismingiz</span>
         </div>
         <div className="tel__input__div input__box">
-          <input required type="text" value={tel} onChange={(e) => setTel(e.target.value)}/>
+          <input required type="text" value={tel} onChange={(e) => setTel(e.target.value)} />
           <span>Telefon Raqam</span>
         </div>
         <div className="service__selection__div input__box">
@@ -45,10 +45,11 @@ function Contact() {
             <option value="briket">Tish Tamirlash</option>
             <option value="briket">Tish Qo'ydirish</option>
             <option value="briket">Tish Oqartirish</option>
+            <option value="briket">Boshqa</option>
           </select>
         </div>
         <div className="desc__input__div input__box">
-          <input required name="" type="text" value={desc} onChange={(e) => setDesc(e.target.value)}/>
+          <input required name="" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} />
           <span>Izoh Qoldirish</span>
         </div>
         <button type='submit' className='contact__submit__btn'>Yuborish</button>

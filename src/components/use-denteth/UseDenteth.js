@@ -1,32 +1,41 @@
-import React from 'react'
-import use__img from "../../assets/use-denteth/use1.jpg"
-import use__img2 from "../../assets/use-denteth/use2.jpg"
-import use__img3 from "../../assets/use-denteth/use3.jpg"
+import React, { useState } from 'react'
+import use__img from "../../assets/use-denteth/tooth.png"
+import use__img2 from "../../assets/use-denteth/use2.png"
+import use__img3 from "../../assets/use-denteth/hospital.png"
+import ScrollTrigger from 'react-scroll-trigger'
+import CountUp from 'react-countup'
+import { BsBuildingAdd } from 'react-icons/bs'
 import "./UseDenteth.css"
+
 function UseDenteth() {
+
+  const [counterOn, setCounterOn] = useState(false)
+
   return (
-    <div className='container'>
-      <div className="use__denteth">
-      <div className="use__Den__img">
-          <img src={use__img} width={100} alt="" />
-          <p className='use__size'>4257</p>
-          <h2>Projects Completed</h2>
-          <p className='use__w'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam quaerat nesciunt.</p>
-        </div>  
-      <div className="use__Den__img">
-          <img src={use__img2} width={100} alt="" />
-          <p className='use__size'>18</p>
-          <h2>Export Dentists</h2>
-          <p className='use__w'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam quaerat nesciunt.</p>
-        </div>  
-      <div className="use__Den__img">
-          <img src={use__img3} width={100} alt="" />
-          <p className='use__size'>6</p>
-          <h2>Breanches in City</h2>
-          <p className='use__w'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam quaerat nesciunt.</p>
-        </div>  
+    <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+      <div className='container'>
+        <div className="use__denteth">
+          <div className="use__Den__img">
+            <img src={use__img} alt="" />
+            <p className='use__size'> {counterOn && <CountUp start={0} end={4540} duration={3} delay={0}/>}+ </p>
+            <h2>Hursand MIjozlar</h2>
+            <span className='use__w'>Biz Ko'plab Yillik Tajriba Davomida Minglab Mijozlarga Xizmat Ko'rsatganmiz!</span>
+          </div>
+          <div className="use__Den__img">
+            <img src={use__img2} alt="" />
+            <p className='use__size'> {counterOn && <CountUp start={0} end={24} duration={2} delay={0}/>}+ </p>
+            <h2>Tajribali Shifokorlar</h2>
+            <span className='use__w'>Bizda Chet El Universitetlarini Tamomlagan Tajribali Shifokorlar Xizmat Ko'rsatadi</span>
+          </div>
+          <div className="use__Den__img">
+            <img src={use__img3} alt="" />
+            <p className='use__size'> {counterOn && <CountUp start={0} end={7} duration={2} delay={0}/>}+ </p>
+            <h2>Shahar Bo'ylab Filiallar</h2>
+            <span className='use__w'>Bizning Klinikamizni Shahar Bo'ylab Bir Nechta Filiallari Mavjud</span>
+          </div>
+        </div>
       </div>
-    </div>
+    </ScrollTrigger>
   )
 }
 

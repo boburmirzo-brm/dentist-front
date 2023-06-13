@@ -1,100 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+.main {
+  margin-top: 20px;
+  background: #F1F8FF;
+  max-width: 1250px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.rigth__first-btn{
-    color: #3267FF;
-    width: 100px;
-    height: 35px;
-    background-color: #fff;
-    border: 1px solid #D3E0FF;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
+.rigth h1 {
+  font-size: 52px;
 }
 
-.rigth h1{
-    font-size: 52px;
+.rigth font {
+  color: #3D80FF;
+  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
 }
 
-.rigth font{
-    color: #3D80FF;
-    font-weight: 600;
-    font-family: 'Manrope', sans-serif;
+.rigth p {
+  font-family: 'Archivo', sans-serif;
+  color: #636571;
 }
 
-.rigth p{
-    font-family: 'Archivo', sans-serif;
-    color: #636571;
+.right__second-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #3267FF;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.right__second-btn{
-    color: #fff;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    border: 1px solid #3267FF;
-    background-color: #3267FF;
-}
-.main__img{
-    position: relative;
-}
-  
-.img2{
-   position: absolute;
-   bottom: 20px;
-   left: 100px;
-   z-index: 1;
+.main__img {
+  position: relative;
 }
 
-.main{
-    background: #F1F8FF;
-    max-width: 1250px;
-    width: auto;
-    margin: auto;
+.img1{
+  margin-top: 100px;
 }
 
-@media (max-width: 768px) {
-  .main {
-    flex-direction: column;
+.img2 {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1010px) {
+  .rigth h1{
+    font-size: 40px;
   }
-
-  .client{
-    padding: 20px;
+  .img1{
+    width: 400px;
   }
+}
 
-  .main__img{
-    position: relative;
-}
-  
-.img2{
-   position: absolute;
-   top: 180px;
-   margin-left: 50px;
-   width: 250px;
-   z-index: 1;
-}
+@media screen and (max-width: 810px) {
+  .rigth h1{
+    font-size: 30px;
+  }
   .img1{
     width: 300px;
   }
-
-  .left {
-    order: 2;
-  }
-
-  .rigth {
-    order: 1;
-  }
-
-  .img2 {
-    left: 0;
-    bottom: -50px;
+  .main{
+    height: 400px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .main{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .img1{
+    margin-top: 0;
+    margin-bottom: -20px;
+  }
+}
+
+
