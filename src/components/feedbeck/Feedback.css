@@ -89,15 +89,22 @@
 }
 
 
-@media screen and (max-width: 1200) {
+@media screen and (max-width: 1200px) {
     .feedback__cards .feedback__card{
-        width: 27%;
+        width: 30%;
     }
-    .feedback__card .card p{
-        margin-top: 10px;
+    .feedback__cards .feedback__card .card p{
         font-size: 15px;
-        font-weight: 500;
-        line-height: 22px;
-        margin-left: 10px;
+        font-weight: 400;
+        margin-left: 15px;
+    }
+    .feedback__card .card .card__icon{
+        width: 10%;
+        font-size: 25px;
+    }
+    .feedback__card .bottom .user__img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5%;
     }
 }
