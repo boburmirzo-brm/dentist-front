@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from '../../../api/index'
 import '../Admin.css'
 
 const CreateProduct = () => {
@@ -9,19 +10,22 @@ const CreateProduct = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(checking);
+        const data = {
+            url: imageLink
+        }
         setLoading(true)
-        // axios.post(`/${checking}`, imageLink)
-        //     .then((res) => {
-        //         console.log(res)
-        //         setImageLink("")
-        //     })
-        //     .catch((err) => {
-        //         console.log(err)
-        //     }).finally(() => {
-        //         setLoading(false)
-        //     })
+        axios.post(`/${checking}`, data)
+            .then((res) => {
+                console.log(res)
+                setImageLink("")
+            })
+            .catch((err) => {
+                console.log(err)
+            }).finally(() => {
+                setLoading(false)
+            })
     }
+
     return (
         <div className='create-product_page'>
             <h5>Create Product</h5>
