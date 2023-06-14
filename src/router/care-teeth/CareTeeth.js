@@ -3,7 +3,6 @@ import "./CareTeeth.css"
 import AOS from 'aos';
 import "aos/dist/aos.css"
 function CareTeeth() {
-
   useEffect(() => {
     AOS.init();
   })
