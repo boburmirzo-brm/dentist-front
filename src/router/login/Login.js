@@ -3,6 +3,7 @@ import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from '../../api/index'
+import {Link} from "react-router-dom"
 import { AiFillEye, AiFillEyeInvisible, AiFillLock, AiOutlineMail, AiOutlineUser, AiOutlineHome } from 'react-icons/ai'
 
 const Login = () => {
@@ -157,7 +158,7 @@ const Login = () => {
                 </ul>
             </>
             <ToastContainer />
-            <a className='login_home_page_link' href="/"><AiOutlineHome /> Home Page</a>
+            <Link className='login_home_page_link' to={"/"}><AiOutlineHome /> Home Page</Link>
         </div >
     )
 }
