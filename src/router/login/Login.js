@@ -3,7 +3,7 @@ import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from '../../api/index'
-import { AiFillEye, AiFillEyeInvisible, AiFillLock, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
+import { AiFillEye, AiFillEyeInvisible, AiFillLock, AiOutlineMail, AiOutlineUser, AiOutlineHome } from 'react-icons/ai'
 
 const Login = () => {
     const [showPassword, setShowPassword] = React.useState(false),
@@ -83,7 +83,7 @@ const Login = () => {
                                 setPassword("")
                                 setUsername("")
                                 setRegistration(false)
-                            }}>
+                            }} href="#">
                                 Login
                             </a>
                         </form>
@@ -104,7 +104,7 @@ const Login = () => {
                                 }
                             </div>
                             <button className="login_page-form-btn">Login</button>
-                            <a onClick={() => {
+                            <a href='#' onClick={() => {
                                 setEmail("")
                                 setPassword("")
                                 setUsername("")
@@ -157,6 +157,7 @@ const Login = () => {
                 </ul>
             </>
             <ToastContainer />
+            <a className='login_home_page_link' href="/"><AiOutlineHome /> Home Page</a>
         </div >
     )
 }
