@@ -1,6 +1,10 @@
 import React from 'react';
 import CompareImage from 'react-compare-image';
 import "./AfterBefore.css";
+import photo1 from "../../assets/after-before/teeth1.jpg"
+import photo2 from "../../assets/after-before/teeth2.jpg"
+import photo3 from "../../assets/after-before/teeth3.jpg"
+import photo4 from "../../assets/after-before/teeth4.jpg"
 
 function AfterBefore() {
   return (
@@ -10,8 +14,8 @@ function AfterBefore() {
     <div className='main'>
       <CompareImage
         className="right"
-        leftImage="https://sa1s3optim.patientpop.com/fit-in/1000x656/assets/images/provider/photos/2331366.jpg"
-        rightImage="https://anpsthemes.com/ident/demo-4/wp-content/uploads/2019/12/after11.jpg"
+        leftImage={photo1}
+        rightImage={photo2}
         handleSize={40}
         handleColor="#ffffff"
         sliderLineColor="#ffffff"
@@ -27,8 +31,8 @@ function AfterBefore() {
       </div>
       <CompareImage
         className="left"
-        leftImage="https://floridassmiles.com/wp-content/uploads/sites/379/2019/08/straight-teeth.jpg.webp"
-        rightImage="https://images.squarespace-cdn.com/content/v1/5358aa29e4b0b772765ff2e8/1526055338311-EDNFXFXCPTVNITD8WDNY/AlexNguyenDDS.ImpactedCanine.jpg?format=750w"
+        leftImage={photo3}
+        rightImage={photo4}
         handleSize={40}
         handleColor="#ffffff"
         sliderLineColor="#ffffff"
