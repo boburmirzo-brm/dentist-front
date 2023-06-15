@@ -1,27 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Navbar.css"
-import {Link} from "react-router-dom"
-import logo from "../../assets/navbar/logo-wide.png"
+import { NavLink, useLocation } from "react-router-dom"
+import { AiOutlineBars } from "react-icons/ai"
+import { IoMdClose } from "react-icons/io"
+import navLogo from "../../assets/navbar/navbarLogo.png"
 
 
 
 function Navbar() {
-  return (
-    <div className='navbar'>
-      <div className="container navbar__container">
-        <div className="nav__logo-container">
-        <img typeof='Link' className='nav__logo' to={"/"} src={logo} alt="" />
-        </div>
-        <ul className='navbar__collection'>
-        <Link className='alone__logo-home none'>sahifalar</Link>
-          <Link className='nav__item late__none' to={"/"}>asosiy</Link>
-          <Link className='nav__item' to={"/care-teeth"}>tishlarni parvarishlash </Link>
-          <Link className='nav__item' to={"/about"}>haqida</Link>
-          <Link className='nav__item' to={"/service"}>xizmat</Link>
-          <Link className='nav__item none'>yangiliklar</Link>
+  const {pathname} = useLocation()
+  const [navToggle, setNavToggle] = useState(false)
+  if(pathname.includes("admin") || pathname.includes("login")){
+    return <></>
+  }
 
-        </ul> 
-      </div>
+  document.body.style.overflow = navToggle ? "hidden" : "auto"
+
+
+  return (
+    <div className=''>
+       <div className={navToggle ? "container nav__wrapper" : "container"} onClick={() => {
+        setNavToggle(false)
+       }}>
+       </div>
+       <div className="container navbar">
+       <div className="nav__logo">
+          <NavLink to={"/"}><img src={navLogo} alt="" /></NavLink>
+        </div>
+        <div className="navbar__collection" >
+          <ul className={navToggle ? " nav__collection activeNav " : "nav__collection"}>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/"}>Asosiy sahifa</NavLink></li>
+            <span className='cutter__navbar'>|</span>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/care-teeth"}>Tish g'amxo'rligi</NavLink></li>
+            <span className='cutter__navbar'>|</span>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/about"}>Biz haqimizda</NavLink></li>
+            <span className='cutter__navbar'>|</span>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/service"}>Xizmatlar</NavLink></li>
+            <span className='cutter__navbar'>|</span>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/after"}>Ishlarimiz</NavLink></li>
+            <span className='cutter__navbar'>|</span>
+            <li onClick={()=> setNavToggle(false)} className="nav__routes"><NavLink to={"/login"}>Login</NavLink></li>
+            <li onClick={()=> setNavToggle(false)} className="siderbar__links"><IoMdClose onClick={()=> setNavToggle(false)} className='sidebar__close'/></li>
+          </ul>
+            <span className="nav__routes"><AiOutlineBars onClick={() => setNavToggle(!navToggle)} className='navbar__bars'/></span>
+        </div>
+       </div>
     </div>
   )
 }

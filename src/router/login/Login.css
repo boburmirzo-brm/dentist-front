@@ -45,6 +45,10 @@
     gap: 5px;
 }
 
+.login_page-form>a {
+    cursor: pointer;
+}
+
 .login_page-input-container {
     width: 100%;
     display: flex;
@@ -412,4 +416,17 @@
     height: 171px;
     bottom: -171px;
     animation-delay: 86s;
+}
+
+.login_home_page_link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid #ffffff76;
+    padding: 5px;
+    border-radius: 7px;
 }

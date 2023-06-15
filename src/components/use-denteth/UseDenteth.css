@@ -9,24 +9,41 @@
 .use__Den__img{
     width: 400px;
     height: 300px;
-    border-left: 1px solid #ddd;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
+
 .use__Den__img img{
     width: 100px;
-    height: 90px;
 }
+
+.use__Den__img:first-child img{
+    width: 90px;
+} 
+
+.use__Den__img:last-child,
+.use__Den__img:nth-child(2){
+    gap: 7px;
+} 
+
+.use__Den__img p{
+    color: var(--bg-py);
+}
+
+.use__Den__img h2{
+    color: var(--bg-dark);
+}
+
 .use__size{
     font-size: 30px;
     font-weight: 700;
 }
-.use__w{
-    font-weight: 300;
-    color: #756d6d;
-}
 
-@media screen and (max-width:900px){
-    .use__Den__img{
-        border: none;
-    }
+.use__w{
+    font-weight: 400;
+    color: #756d6d;
 }

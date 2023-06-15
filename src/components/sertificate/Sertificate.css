@@ -8,7 +8,8 @@
 }
 
 .main_text_certificate_page {
-    font-size: 25px;
+    font-size: 40px;
+    padding: 20px 20px;
     color: var(--bg-py);
 }
 
@@ -22,6 +23,7 @@
 
 .left_text_part {
     width: 55%;
+    padding: 10px 0px;
     background-color: transparent;
 }
 
@@ -32,9 +34,8 @@
     gap: 10px;
 }
 
-
 .right_swiper_part {
-    width: 40%;
+    width: 45%;
     background-color: transparent;
 }
 
@@ -56,19 +57,28 @@
     width: 100%;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     .certificate_main_page {
         flex-direction: column-reverse;
         align-items: center;
         gap: 20px;
     }
-
     .left_text_part {
         width: 100%;
     }
-
     .right_swiper_part {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 650px) {
+    .main_text_certificate_page {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main_text_certificate_page {
+        font-size: 25px;
+    }
 }
