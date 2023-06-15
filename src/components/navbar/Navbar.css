@@ -1,11 +1,9 @@
 .navbar{
-    width: 100%;
     height: 95px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
-    padding: 0 70px;
     position: relative;
 }
 .nav__logo{
@@ -22,27 +20,20 @@
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 25px;
+}
+.cutter__navbar{
+    color: var(--bg-py);
 }
 .nav__routes{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     transition: .3s;
     cursor: pointer;
     color: var(--bg-py);
 }
 .nav__routes:hover{
     color: var(--bg-dark);
-}
-.sidebar__navbar{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 240px;
-    height: 100vh;
-    background: #ddd;
-    z-index: 10;
-    padding: 40px 20px;
 }
 .show__sidebar{
     right: -350px;
@@ -80,6 +71,11 @@
 }
 
 
+@media screen and (max-width: 1010px) {
+    .nav__collection{
+        gap: 10px;
+    }
+}
 
 
 
@@ -89,36 +85,42 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .navbar{
-        padding: 0;
-    }
-    .nav__collection{
-        gap: 20px;
-    }
-}
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 830px) {
     .nav__routes{
         font-size: 14px;
+        font-weight: 600;
+    }
+    .nav__collection{
+        gap: 8px;
     }
 }
 
-@media screen and (max-width: 700px) {
+
+
+@media screen and (max-width: 802px) {
     .nav__collection{
         position: fixed;
         top: 0;
         right: -300px;
-        width: 300px;
-        padding: 40px 30px;
+        width: 400px;
+        padding: 70px 30px;
         height: 100vh;
         display: flex;
         float: left;
         align-items: flex-start;
         flex-direction: column;
-        background-color: #ddd;
+        background: url("../../assets/navbar/sidebarImg.webp") no-repeat center/cover;
         z-index: 10;
         transition: .3s;
+        gap: 20px;
+    }
+    .nav__routes{
+        color: var( --bg-py);
+        font-weight: 700;
+        font-size: 19px;
+        border-bottom: 1px solid var(--bg-py);
+        padding-bottom: 5px;
     }
     .navbar__bars{
         font-size: 25px;
@@ -126,25 +128,51 @@
         right: 20px;
         display: block;
         transform: translateY(-10px);
+        color: var(--bg-py);
     }
     .nav__collection.activeNav{
         right: 0;
     }
     .sidebar__close{
         display: block;
+        color: var(--bg-py);
+    }
+    .cutter__navbar{
+        display: none;
+    }
+    .nav__wrapper{
+        z-index: 9;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .nav__routes{
+        font-size: 19px;
+    }
+    .nav__collection{
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .nav__collection{
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 470px) {
     .nav__collection{
-        width: 240px;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .nav__collection{
-        width: 200px;
         padding: 50px 20px;
+        gap: 20px;
+    }
+    .nav__routes{
+        font-size: 16px;
     }
     .sidebar__close{
         right: 10px;
