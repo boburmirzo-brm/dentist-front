@@ -219,7 +219,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .manage_product_container {
@@ -228,6 +228,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 10px;
+    gap: 20px;
 }
 
 .swiper_container_manage_product {
@@ -235,28 +236,71 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .manage_product-images {
-    width: 200px;
+    width: 250px;
+    height: auto;
     position: relative;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.manage_product-images h4 {
+    width: 90%;
+    word-wrap: break-word;
+}
+
+.text_area_manage_product {
+    width: 90%;
+    text-align: center;
+    min-height: 50px;
+}
+
+.manage_product-images p {
+    width: 90%;
+    word-wrap: break-word;
 }
 
 .delete_btn_manage_product {
     position: absolute;
     top: 3px;
     right: 5px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffffffd7;
     border-radius: 50%;
     transition: all .3s ease;
     cursor: pointer;
+    border: 1px solid #dbdbdb;
 }
+
+.edit_btn_manage_product {
+    position: absolute;
+    top: 32px;
+    right: 5px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffd7;
+    border-radius: 50%;
+    transition: all .3s ease;
+    cursor: pointer;
+    border: 1px solid #dbdbdb;
+}
+
 
 .delete_btn_manage_product svg {
     font-size: 15px;
@@ -264,6 +308,16 @@
 
 .delete_btn_manage_product:hover {
     background-color: red;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.edit_btn_manage_product svg {
+    font-size: 15px;
+}
+
+.edit_btn_manage_product:hover {
+    background-color: green;
     color: #fff;
     transition: all .3s ease;
 }

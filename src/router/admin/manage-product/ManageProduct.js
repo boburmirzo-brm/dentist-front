@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import '../Admin.css'
 import { FiTrash } from 'react-icons/fi'
+import { BiPencil } from 'react-icons/bi'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from '../../../api/index'
+import EditCertificate from './edit_certificate/EditCertificate';
 
 const ManageProduct = () => {
     const [bannerData, setBannerData] = useState([])
-    const [swiperData, setSwiperData] = useState([])
+    const [certificateData, setCertificateData] = useState([])
     const [bannerRefresh, setBannerRefresh] = useState(false)
-    const [swiperRefresh, setSwiperReFresh] = useState(false)
+    const [certificateRefresh, setCertificateRefresh] = useState(false)
+    const [editBannerData, setEditBannerData] = useState(null)
 
 
     useEffect(() => {
@@ -23,24 +26,24 @@ const ManageProduct = () => {
     }, [bannerRefresh])
 
     useEffect(() => {
-        axios.get("/swiper")
+        axios.get("/certificate")
             .then((res) => {
-                setSwiperData(res.data.innerData)
+                setCertificateData(res.data.innerData)
             })
             .catch(err => {
                 console.log(err)
             })
-    }, [swiperRefresh])
+    }, [certificateRefresh])
 
 
     return (
         <div className='manage_product'>
             <h4>Manage Product</h4>
             <div className="manage_product_container">
-                <h5>Swiper</h5>
+                <h3>Swiper</h3>
                 <div className="swiper_container_manage_product">
                     {
-                        swiperData?.map((data, inx) =>
+                        certificateData?.map((data, inx) =>
                             <div className="manage_product-images" key={inx}>
                                 <img src={data.url} alt="" />
                                 <div className="delete_btn_manage_product">
@@ -49,9 +52,8 @@ const ManageProduct = () => {
                                             e.preventDefault()
                                             axios.delete(`/swiper/${data._id}`)
                                                 .then(res => {
-                                                    setSwiperReFresh(p => !p)
+                                                    setCertificateRefresh(p => !p)
                                                     toast.success(res.data.msg)
-                                                    console.log(res.data.msg)
                                                 })
                                                 .catch(err => {
                                                     console.log(err)
@@ -62,27 +64,39 @@ const ManageProduct = () => {
                         )
                     }
                 </div>
-                <h5>Banner</h5>
+                <h3>Banner</h3>
                 <div className="swiper_container_manage_product">
                     {
                         bannerData?.map((data, inx) =>
                             <div className="manage_product-images" key={inx}>
                                 <img src={data.url} alt="" />
-                                <div className="delete_btn_manage_product">
-                                    <FiTrash
-                                        onClick={(e) => {
-                                            e.preventDefault()
-                                            axios.delete(`/banner/${data._id}`)
-                                                .then(res => {
-                                                    setBannerRefresh(p => !p)
-                                                    toast.success(res.data.msg)
-                                                    console.log(res.data.msg)
+                                {
+                                    data.headertext && data.secondtext ?
+                                        <div className='text_area_manage_product'>
+                                            <h4>1st text: {data.headertext}</h4>
+                                            <p>2nd text: {data.secondtext}</p>
+                                        </div> :
+                                        <div className='text_area_manage_product'></div>
+                                }
+                                <div className="delete_btn_manage_product"
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        axios.delete(`/banner/${data._id}`)
+                                            .then(res => {
+                                                setBannerRefresh(p => !p)
+                                                toast.success(res.data.msg)
+                                                console.log(res.data.msg)
 
-                                                })
-                                                .catch(err => {
-                                                    console.log(err)
-                                                })
-                                        }} />
+                                            })
+                                            .catch(err => {
+                                                console.log(err)
+                                            })
+                                    }}
+                                >
+                                    <FiTrash />
+                                </div>
+                                <div className="edit_btn_manage_product">
+                                    <BiPencil onClick={() => setEditBannerData(data)} />
                                 </div>
                             </div>
                         )
@@ -90,6 +104,7 @@ const ManageProduct = () => {
                 </div>
             </div>
             <ToastContainer />
+            <EditCertificate editBannerData={editBannerData} setEditBannerData={setEditBannerData} setBannerRefresh={setBannerRefresh} />
         </div>
     )
 }
