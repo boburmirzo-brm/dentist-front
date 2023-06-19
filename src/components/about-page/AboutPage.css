@@ -1,0 +1,134 @@
+.first__banner__about{
+    width: 100%;
+    height: 450px;
+    background: url("../../assets/about/aboutBanner.jpg") no-repeat center/cover;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--bg-py);
+    padding-right: 100px;
+}
+.about__banner__desc{
+    width: 450px;
+    text-align: end;
+    margin-top: 10px;
+    color: var(--bg-light);
+}
+.about__banner__title{
+    font-size: 50px;
+    color: var(--bg-light);
+}
+.about__banner__title span{
+    color: var(--bg-py);
+}
+.about__page__wrapper{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    place-items: center;
+    margin: 50px 0;
+}
+.about__page__card{
+    width: 95%;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.about__page__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px;
+    transition: .4s;
+}
+.about__page__card__desc{
+    width: 95%;
+    height: 350px;
+    background: rgba(221, 221, 221, 0.349);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.about__page__card img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.mini__title__about span{
+    color: var(--bg-py);
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .mini__title__about{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about__page__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .mini__title__about{
+        font-size: 35px;
+    }
+    .first__banner__about{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .first__banner__about{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .first__banner__about{
+        padding-right: 20px;
+    }  
+    .about__banner__title{
+        font-size: 50px;
+    }
+    .about__banner__desc{
+        font-size: 15px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .about__banner__title{
+        color: var(--bg-py);
+    }
+    .about__banner__title span{
+        color: var(--bg-light);
+    }
+    .about__page__card__desc{
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__banner__title{
+        font-size: 40px;
+    }
+    .mini__title__about{
+        font-size: 25px;
+    }
+    .mini__desc__about{
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
