@@ -59,7 +59,7 @@
 }
 .sidebar__close{
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     cursor: pointer;
     font-size: 25px;
@@ -104,22 +104,22 @@
         top: 0;
         right: -400px;
         width: 400px;
-        padding: 70px 30px;
+        padding: 100px 30px;
         height: 100vh;
         display: flex;
         float: left;
-        align-items: flex-start;
+        align-items: flex-end;
         flex-direction: column;
-        background: url("../../assets/navbar/sidebarImg.webp") no-repeat center/cover;
+        background: url("../../assets/navbar/sidebarImg.jpg") no-repeat center/cover;
         z-index: 10;
         transition: .3s;
         gap: 20px;
     }
     .nav__routes{
-        color: var( --bg-py);
+        color: var( --bg-light);
         font-weight: 700;
         font-size: 19px;
-        border-bottom: 1px solid var(--bg-py);
+        border-bottom: 1px solid var(--bg-light);
         padding-bottom: 5px;
     }
     .navbar__bars{
