@@ -22,7 +22,7 @@
     color: var(--bg-light);
 }
 .about__banner__title span{
-    color: var(--bg-py);
+    color: var(--bg-dark);
 }
 .about__page__wrapper{
     width: 100%;
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 430px) {
     .about__banner__title{
-        color: var(--bg-py);
+        color: var(--bg-dark);
     }
     .about__banner__title span{
         color: var(--bg-light);
