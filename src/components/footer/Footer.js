@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer__container__part__one">
           <div className="footer__container__text__box">
             <img className='footer__container__text__box__photo' src={footer__photo} alt="" />
-            <p className='footer__container__text__box__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className='footer__container__text__box__text'>Tishlaringiz biz bilan sog'lom bo'ladi</p>
             <div className="footer__container__text__box__icons">
               <FaFacebookSquare/>
               <AiOutlineTwitter/>   
@@ -28,19 +28,20 @@ function Footer() {
           <div className="footer__container__text__box footer_part__box2">
             <h2 className='footer__container__text__box2__text footer__part'>Foydali havola</h2>
             <div className="footer__container__text__box2__button"></div>
-            <p className='footer__container__text__box2__text'>Privacy Policy</p>
-            <p className='footer__container__text__box2__text'>Support</p>
+            <p className='footer__container__text__box2__text'>Maxfilik siyosati</p>
+            <p className='footer__container__text__box2__text'>Qo'llab-quvvatlash</p>
             <p className='footer__container__text__box2__text'>FAQ</p>
-            <p className='footer__container__text__box2__text'>Terms & Conditions</p>
+            <p className='footer__container__text__box2__text'>
+Foydalanish shartlari</p>
           </div>
 
           <div className="footer__container__text__box">
           <h2 className='footer__container__text__box2__text footer__part'>Qo'llab-quvvatlash</h2>
             <div className="footer__container__text__box2__button"></div>
-            <p className='footer__container__text__box2__text'>Privacy Policy</p>
-            <p className='footer__container__text__box2__text'>Support</p>
+            <p className='footer__container__text__box2__text'>Maxfilik siyosati</p>
+            <p className='footer__container__text__box2__text'>Qo'llab-quvvatlash</p>
             <p className='footer__container__text__box2__text'>FAQ</p>
-            <p className='footer__container__text__box2__text'>Terms & Conditions</p>
+            <p className='footer__container__text__box2__text'>Foydalanish shartlari</p>
           </div>
           <div className="footer__container__text__box">
           <h2 className='footer__container__text__box2__text footer__part'>
@@ -52,8 +53,10 @@ Biz bilan bog'lanish</h2>
         </div>
         <hr className='footer__hr' />
         <div className="footer__down__desc">
-          <p className='footer__down__desc__text'>Dental Clinic Template Kit by Jegtheme</p>
-          <p className='footer__down__desc__text2'>Copyright © 2023. All rights reserved</p>
+          <p className='footer__down__desc__text'>
+Jegtheme tomonidan stomatologiya klinikasi shablonlari to'plami</p>
+          <p className='footer__down__desc__text2'>
+Mualliflik huquqi © 2023. Barcha huquqlar himoyalangan</p>
         </div>
       </div>
     </div>
