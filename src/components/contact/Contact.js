@@ -35,7 +35,7 @@ function Contact() {
           <span>Ismingiz</span>
         </div>
         <div className="tel__input__div input__box">
-          <input required type="text" value={tel} onChange={(e) => setTel(e.target.value)} />
+          <input required type="number" value={tel} onChange={(e) => setTel(e.target.value)} />
           <span>Telefon Raqam</span>
         </div>
         <div className="service__selection__div input__box">

@@ -40,8 +40,8 @@
 
 .input__box input:valid ~ span,
 .input__box input:focus ~ span{
-   padding: 10px 10px 15px 0px;
-   margin-left: 10px;
+   padding: 10px 10px 15px 10px;
+   margin-left: 20px;
    background: white;
    color: var(--bg-py);
    font-size: 16px;
