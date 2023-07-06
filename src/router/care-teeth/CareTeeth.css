@@ -1,7 +1,6 @@
 .care__Teeth {
     height: auto;
 }
-
 .careTeeth {
     width: 100%;
     height: 420px;
@@ -36,6 +35,8 @@ color: #3E81FF;
 }
 .careTeeth__note {
     margin: 20px auto;
+}
+.careteeth__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -152,7 +153,12 @@ color: #3E81FF;
 }
 
 @media screen and (max-width:600px) {
-
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
     .note__box {
         width: 95%;
         height: 300px;
