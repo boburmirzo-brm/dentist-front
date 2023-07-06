@@ -16,7 +16,7 @@ function Banner() {
       <div className="banner">
       <Swiper
       autoplay={{
-        delay: 3000,
+        delay: 300000,
         disableOnInteraction: false
       }}
        loop={true} 
@@ -26,23 +26,23 @@ function Banner() {
       
          <SwiperSlide >
             <img className="banner__img" src={b_img1}alt="" />
-            <h1>Contact Us Become <span className="dodger__span">The Next Our Happy Client</span></h1>
+            <h1>Keyingi Baxtli Mijoz Bo'lish Uchun <br /><span className="dodger__span">Biz Bilan Bog'laning</span></h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolor itaque vero temporibus sit blanditiis.</p>
-            <button className="meet">Meet our doctors</button>
+            <button className="meet">Qabulga Yozilish</button>
             <div className="back__bc"></div>
           </SwiperSlide>
          <SwiperSlide >
             <img className="banner__img" src={b_img2}alt="" />
-            <h1>The Best Services <span className="dodger__span">Dedicated You The Best Services</span></h1>
+            <h1>Eng Yaxshi Sifatli Xizmatlarimiz <br /><span className="dodger__span">Siz uchun Atalgan</span></h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolor itaque vero temporibus sit blanditiis.</p>
-            <button className="meet">Meet our doctors</button>
+            <button className="meet">Qabulga Yozilish</button>
             <div className="back__bc"></div>
           </SwiperSlide>
          <SwiperSlide >
             <img className="banner__img" src={b_img3}alt="" />
-            <h1>Helping You to <span className="dodger__span">Bring Back Your Happy Smile</span></h1>
+            <h1>Sog'lom Tishlaringizni Qaytarishda <br /><span className="dodger__span">Sizga Yordam Beramiz</span></h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolor itaque vero temporibus sit blanditiis.</p>
-            <button className="meet">Meet our doctors</button>
+            <button className="meet">Qabulga Yozilish</button>
             <div className="back__bc"></div>
           </SwiperSlide>
       </Swiper>

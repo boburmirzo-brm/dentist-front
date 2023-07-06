@@ -14,9 +14,9 @@ function Contact() {
     e.preventDefault()
     let text = ""
     text += "Mijoz Habar Yubordi:"
-    text += `<b>Mijoz Ismi:</b> %OA${name}`
-    text += `<b>Mijoz Telefon Raqami:</b> %OA${tel}`
-    text += `<b>Xizmat Turi:</b> ${type}`
+    text += `<b>Mijoz Ismi:</b> ${name} %0A`
+    text += `<b>Mijoz Telefon Raqami:</b> ${tel} %0A`
+    text += `<b>Xizmat Turi:</b> ${type} %0A`
     text += `<b>Mijoz Habari:</b> ${desc}`
 
     let url = `https://api.telegram.org/bot${process.env.REACT_APP_BOTTOKEN}/sendMessage?chat_id=${process.env.REACT_APP_CHATID}&text=${text}&parse_mode=html`
@@ -24,6 +24,7 @@ function Contact() {
     let api = new XMLHttpRequest()
     api.open("GET", url, true)
     api.send()
+    alert("Habaringiz Yuborildi Tez Orada Sizga Aloqaga Chiqamiz")
   }
   return (
     <div className='contact__wrapper container'>
@@ -34,7 +35,7 @@ function Contact() {
           <span>Ismingiz</span>
         </div>
         <div className="tel__input__div input__box">
-          <input required type="text" value={tel} onChange={(e) => setTel(e.target.value)} />
+          <input required type="number" value={tel} onChange={(e) => setTel(e.target.value)} />
           <span>Telefon Raqam</span>
         </div>
         <div className="service__selection__div input__box">
