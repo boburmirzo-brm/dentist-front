@@ -70,7 +70,6 @@
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 1010px) {
     .nav__collection{
         gap: 10px;
