@@ -54,9 +54,8 @@ Biz bilan bog'lanish</h2>
         <hr className='footer__hr' />
         <div className="footer__down__desc">
           <p className='footer__down__desc__text'>
-Jegtheme tomonidan stomatologiya klinikasi shablonlari to'plami</p>
-          <p className='footer__down__desc__text2'>
-Mualliflik huquqi © 2023. Barcha huquqlar himoyalangan</p>
+Stomatologiya klinikasi shablonlari to'plami</p>
+          <p className='footer__down__desc__text2'>© 2023. <a href="https://namtech.uz" target='_blank'>NamTech</a> Solution</p>
         </div>
       </div>
     </div>

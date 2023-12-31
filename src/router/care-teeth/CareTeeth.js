@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./CareTeeth.css"
-import AOS from 'aos';
-import "aos/dist/aos.css"
 function CareTeeth() {
-  useEffect(() => {
-    AOS.init();
-  })
 
   return (
     <div className='care__Teeth container'>
@@ -22,8 +17,8 @@ function CareTeeth() {
       <br />
       <div className="careTeeth__note container">
         <div className="careteeth__wrapper">
-          <div data-aos="zoom-in-left" data-aos-duration="800" className="note__box1"></div>
-          <div data-aos="zoom-in-right" data-aos-duration="800" className="note__box">
+          <div  className="note__box1"></div>
+          <div  className="note__box">
             <p>
               <h3>Tishlaringizni kunda <span>uch marta yuving</span></h3>
               <br />
@@ -32,7 +27,7 @@ function CareTeeth() {
           </div>
         </div>
         <div className="careteeth__wrapper">
-          <div data-aos="zoom-in-left" data-aos-duration="800" className="note__box order-2">
+          <div className="note__box order-2">
             <p>
               <h3>Tishni <span>davolatishda tavsiyalar</span></h3>
               <br />
@@ -41,11 +36,11 @@ function CareTeeth() {
 
               Qo‘pol bo‘lsa ham aytaman, boylar oldinlari qul yoki ot, qo‘y olayotganda tishiga qarab olishgan.</p>
           </div>
-          <div data-aos="zoom-in-right" data-aos-duration="800" className="note__box2 order-1"></div>
+          <div className="note__box2 order-1"></div>
         </div>
         <div className="careteeth__wrapper">
-          <div data-aos="zoom-in-left" data-aos-duration="800" className="note__box3"></div>
-          <div data-aos="zoom-in-right" data-aos-duration="800" className="note__box">
+          <div  className="note__box3"></div>
+          <div  className="note__box">
             <p>
               <h3>Tish uchun <span>bular foydali usul</span></h3>
               <br />
@@ -54,14 +49,14 @@ function CareTeeth() {
           </div>
         </div>
         <div className="careteeth__wrapper">
-          <div data-aos="zoom-in-left" data-aos-duration="800" className="note__box order-2">
+          <div className="note__box order-2">
             <p>
               <h3>Har 6 oyda <span>shifokorga ko‘rining</span></h3>
               <br />
               Qabulimga 18-20 yoshlilar keladi. Aslida, 18 yoshda 28 ta tish bo‘lishi kerak. Borlarining ham kamida 20 ta tishida muammo bor.
               Odamlar tishida muammo bo‘lsa-bo‘lmasa, har olti oyda stomatologga kelib tekshirtirib turishlarini maslahat bergan bo‘lardim.</p>
           </div>
-          <div data-aos="zoom-in-right" data-aos-duration="800" className="note__box4 order-1"></div>
+          <div  className="note__box4 order-1"></div>
         </div>
 
 

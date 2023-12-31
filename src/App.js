@@ -19,12 +19,8 @@ function App() {
       <SinglePageCertificate />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/care-teeth' element={<CareTeeth />} />
-        <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
         <Route path='/after' element={<AfterBefore />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin/*" element={<Admin />} />
       </Routes>
       <Footer />
     </div>

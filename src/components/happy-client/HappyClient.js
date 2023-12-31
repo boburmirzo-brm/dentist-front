@@ -7,8 +7,8 @@ function HappyClient() {
       <div className='client'>
         <div className="main">
           <div className="rigth">
-            <h1>Become The Next <br />
-              Our <font>Happy Client</font></h1>
+            <h1>Sizga doim <br />
+              <font>tabassum</font> yarashadi</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
               Aenean commodo ligula eget dolor. Aenean massa.</p><br />
             <button className='right__second-btn'>Book an Appointment</button>
